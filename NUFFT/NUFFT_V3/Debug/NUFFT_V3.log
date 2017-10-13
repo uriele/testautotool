@@ -1,0 +1,80 @@
+﻿Build started 12/11/2015 4:52:43 AM.
+     1>Project "C:\Users\menar_000\Desktop\111015_opticalmodel\NUFFT\NUFFT_V3\NUFFT_V3.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt direct.cpp direct_static_scalar.cpp direct_static_vector.cpp domain.cpp field.cpp field_static_scalar.cpp field_static_vector.cpp InterfaceFor.cpp nbodyfast.cpp nufft.cpp nufft_static_scalar.cpp nufft_static_vector.cpp
+         nufft_static_vector.cpp
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(115): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(197): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(204): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(212): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(220): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(228): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(236): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(244): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(251): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(265): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(277): warning C4244: 'argument' : conversion from 'double' to 'const std::complex<float>::_Ty', possible loss of data
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(277): warning C4244: 'argument' : conversion from 'double' to 'const std::complex<float>::_Ty', possible loss of data
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(288): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(435): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_vector.cpp(597): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         nufft_static_scalar.cpp
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_scalar.cpp(251): warning C4244: 'argument' : conversion from 'double' to 'const std::complex<float>::_Ty', possible loss of data
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_scalar.cpp(251): warning C4244: 'argument' : conversion from 'double' to 'const std::complex<float>::_Ty', possible loss of data
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_scalar.cpp(262): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_scalar.cpp(350): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft_static_scalar.cpp(456): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         nufft.cpp
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\timer.h(67): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\timer.h(72): warning C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.h(153) : see declaration of 'asctime'
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\timer.h(80): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\timer.h(82): warning C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.h(153) : see declaration of 'asctime'
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft.cpp(190): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft.cpp(194): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft.cpp(200): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nufft.cpp(841): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+         nbodyfast.cpp
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\timer.h(67): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\timer.h(72): warning C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.h(153) : see declaration of 'asctime'
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\timer.h(80): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\timer.h(82): warning C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.h(153) : see declaration of 'asctime'
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nbodyfast.cpp(261): warning C4150: deletion of pointer to incomplete type 'NBODYFAST_NS::Gpu'; no destructor called
+                 c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\nbodyfast.h(34) : see declaration of 'NBODYFAST_NS::Gpu'
+         InterfaceFor.cpp
+         field_static_vector.cpp
+         field_static_scalar.cpp
+         field.cpp
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\field.cpp(37): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\menar_000\desktop\111015_opticalmodel\nufft\nufft_v3\field.cpp(40): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         domain.cpp
+         direct_static_vector.cpp
+         direct_static_scalar.cpp
+         direct.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\menar_000\Desktop\111015_opticalmodel\Debug\NUFFT_V3.lib" /NOLOGO Debug\direct.obj
+         Debug\direct_static_scalar.obj
+         Debug\direct_static_vector.obj
+         Debug\domain.obj
+         Debug\field.obj
+         Debug\field_static_scalar.obj
+         Debug\field_static_vector.obj
+         Debug\InterfaceFor.obj
+         Debug\nbodyfast.obj
+         Debug\nufft.obj
+         Debug\nufft_static_scalar.obj
+         Debug\nufft_static_vector.obj
+         NUFFT_V3.vcxproj -> C:\Users\menar_000\Desktop\111015_opticalmodel\Debug\NUFFT_V3.lib
+     1>Done Building Project "C:\Users\menar_000\Desktop\111015_opticalmodel\NUFFT\NUFFT_V3\NUFFT_V3.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.91

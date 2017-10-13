@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{fe12e6a3-1d71-405c-b4d6-ae21777546a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{f25fe340-d87b-4927-8c83-1cf5e86d0f7e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="direct_gpu_kernel.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="direct_static_scalar_gpu.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="direct_static_vector_gpu.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="field_gpu.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="field_static_scalar_gpu.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="field_static_vector_gpu.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="gpu.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="interp_kernel.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="memory_gpu.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="nufft_gpu.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="nufft_static_scalar_gpu.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="nufft_static_scalar_gpu_kernel.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="nufft_static_vector_gpu.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="nufft_static_vector_gpu_kernel.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="direct_static_scalar_gpu.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="direct_static_scalar_gpu_kernel.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="direct_static_vector_gpu.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="direct_static_vector_gpu_kernel.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="field_gpu.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="field_static_scalar_gpu.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="field_static_vector_gpu.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="gpu.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="nufft_gpu.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="nufft_static_scalar_gpu.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="nufft_static_scalar_gpu_kernel.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="nufft_static_vector_gpu.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="nufft_static_vector_gpu_kernel.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

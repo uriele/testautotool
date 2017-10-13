@@ -1,0 +1,8 @@
+﻿Build started 6/5/2015 1:31:17 AM.
+     1>Project "C:\Users\menar_000\Desktop\150512_Original_Garanin\NUFFT\NUFFT_V3\NUFFT_V3.vcxproj" on node 4 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Cpp.Platform.targets(64,5): error MSB8020: The build tools for Visual Studio 2010 (Platform Toolset = 'v100') cannot be found. To build using the v100 build tools, please install Visual Studio 2010 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Upgrade Solution...".
+     1>Done Building Project "C:\Users\menar_000\Desktop\150512_Original_Garanin\NUFFT\NUFFT_V3\NUFFT_V3.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.05

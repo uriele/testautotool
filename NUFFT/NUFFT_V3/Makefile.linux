@@ -1,0 +1,85 @@
+
+MAKE = /bin/make
+
+# This is internal
+
+SHELL = /bin/sh
+
+# Just to make sure
+
+
+CPP = icpc -O2 -fast -axSSE3 -xSSE3 -openmp -m64
+NVCPP   = nvcc -O2 -use_fast_math -m64
+LIBS = ../../lib/libfftw3.a
+ #-lpthread -openmp_stubs -lstdc++ -lfftw3
+CFLAGS = -O2 -D_USE_CUDA -I../NUFFT_CUDA_V3 -I./ -I/cm/shared/apps/cuda75/toolkit/current/include/
+
+OBJ_MOD = \
+	direct_static_scalar.o\
+	direct_static_vector.o\
+	direct.o\
+	nufft_static_scalar.o\
+	nufft_static_vector.o\
+	nufft.o\
+	nbodyfast.o\
+	InterfaceFor.o\
+	field_static_scalar.o\
+	field_static_vector.o\
+	field.o\
+	domain.o	
+
+OBJ = $(OBJ_MOD)
+
+
+nbody_fast_c1.a:  $(OBJ)
+	xiar cru ../../lib/libNUFFT_v3.a $(OBJ) $(LIBS)
+
+direct_static_scalar.o:
+	$(CPP) $(CFLAGS) -c direct_static_scalar.cpp
+
+direct_static_vector.o:
+	$(CPP) $(CFLAGS) -c direct_static_vector.cpp
+
+direct.o:
+	$(CPP) $(CFLAGS) -c direct.cpp
+
+nufft_static_scalar.o:
+	$(CPP) $(CFLAGS) -c nufft_static_scalar.cpp
+
+nufft_static_vector.o:
+	$(CPP) $(CFLAGS) -c nufft_static_vector.cpp
+
+nufft.o:
+	$(CPP) $(CFLAGS) -c nufft.cpp
+
+nbodyfast.o:
+	$(CPP) $(CFLAGS) -c nbodyfast.cpp
+
+InterfaceFor.o:
+	$(CPP) $(CFLAGS) -c InterfaceFor.cpp
+
+field_static_scalar.o:
+	$(CPP) $(CFLAGS) -c field_static_scalar.cpp
+
+field_static_vector.o:
+	$(CPP) $(CFLAGS) -c field_static_vector.cpp
+
+field.o:
+	$(CPP) $(CFLAGS) -c field.cpp
+
+domain.o:
+	$(CPP) $(CFLAGS) -c domain.cpp
+
+
+all: nbody_fast_c1.a
+
+
+clear_dist:
+	/bin/rm -f $(MAKE_LIST)
+	cp /dev/null $(MAKE_LIST)
+
+clean:
+	rm -f *.o
+	rm -f *.mod
+	rm -f *.dat
+	rm -f ../../lib/libNUFFT_v3.a

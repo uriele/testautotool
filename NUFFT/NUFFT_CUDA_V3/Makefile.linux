@@ -1,0 +1,89 @@
+
+MAKE = /bin/make
+
+# This is internal
+
+SHELL = /bin/sh
+
+# Just to make sure
+
+CPP = icpc -m64
+NVCC   = nvcc -m64 -O2 -use_fast_math -gencode=arch=compute_20,code=\"sm_20,compute_20\" -D_USE_CUDA -I/cm/shared/apps/cuda75/toolkit/current/include
+
+INC = ../NUFFT_V3
+LIBS = ../../lib/libfftw3.a
+ #-lpthread -openmp_stubs -lstdc++ -lfftw3
+CFLAGS = -O2
+OBJ_MOD = \
+	direct_static_scalar_gpu.o\
+	direct_static_vector_gpu.o\
+	nufft_static_scalar_gpu_kernel.o\
+	nufft_static_vector_gpu_kernel.o\
+	nufft_static_scalar_gpu.o\
+	nufft_static_vector_gpu.o\
+	nufft_gpu.o\
+	gpu.o\
+	field_static_scalar_gpu.o\
+	field_static_vector_gpu.o\
+	field_gpu.o\
+	direct_static_scalar_gpu_kernel.o\
+	direct_static_vector_gpu_kernel.o
+
+OBJ = $(OBJ_MOD)
+
+
+nbody_fast_c1.a:  $(OBJ)
+	xiar cru ../../lib/libNUFFT_v3_cuda.a $(OBJ) $(LIBS)
+
+direct_static_scalar_gpu.o:
+	$(NVCC) -I$(INC) -c direct_static_scalar_gpu.cu
+
+direct_static_vector_gpu.o:
+	$(NVCC) -I$(INC) -c direct_static_vector_gpu.cu
+
+nufft_static_scalar_gpu_kernel.o:
+	$(NVCC) -I$(INC) -c nufft_static_scalar_gpu_kernel.cu
+
+nufft_static_vector_gpu_kernel.o:
+	$(NVCC) -I$(INC) -c nufft_static_vector_gpu_kernel.cu
+
+nufft_static_scalar_gpu.o:
+	$(NVCC) -I$(INC) -c nufft_static_scalar_gpu.cu
+
+nufft_static_vector_gpu.o:
+	$(NVCC) -I$(INC) -c nufft_static_vector_gpu.cu
+
+nufft_gpu.o:
+	$(NVCC) -I$(INC) -c nufft_gpu.cu
+
+gpu.o:
+	$(NVCC) -I$(INC) -c gpu.cu
+
+field_static_scalar_gpu.o:
+	$(NVCC) -I$(INC) -c field_static_scalar_gpu.cu
+
+field_static_vector_gpu.o:
+	$(NVCC) -I$(INC) -c field_static_vector_gpu.cu
+
+field_gpu.o:
+	$(NVCC) -I$(INC) -c field_gpu.cu
+
+direct_static_scalar_gpu_kernel.o:
+	$(NVCC) -I$(INC) -c direct_static_scalar_gpu_kernel.cu
+
+direct_static_vector_gpu_kernel.o:
+	$(NVCC) -I$(INC) -c direct_static_vector_gpu_kernel.cu
+
+
+all: nbody_fast_c1.a
+
+
+clear_dist:
+	/bin/rm -f $(MAKE_LIST)
+	cp /dev/null $(MAKE_LIST)
+
+clean:
+	rm -f *.o
+	rm -f *.mod
+	rm -f *.dat
+	rm -f ../../lib/libNUFFT_v3_cuda.a
